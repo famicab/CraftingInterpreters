@@ -95,6 +95,7 @@ class Scanner {
 			line++;
 			break;
 		case '"': string(); break;
+		//TODO: add support for block comments (/* ... */)
 		default:
 			if (isDigit(c)) {
 				number();
